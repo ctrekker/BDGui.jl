@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.26
+# v0.19.27
 
 using Markdown
 using InteractiveUtils
@@ -18,24 +18,10 @@ end
 # ╠═╡ show_logs = false
 begin
 	using Pkg
-	Pkg.activate(temp = true)
-	Pkg.add("CairoMakie")
-	Pkg.add("NIfTI")
-	Pkg.add("PlutoUI")
-	Pkg.add("CSV")
-	Pkg.add("DataFrames")
-	Pkg.add("Statistics")
-	Pkg.add("StatsBase")
-	Pkg.add(url="https://github.com/hstrey/BDTools.jl")
+	Pkg.activate("..")
+	Pkg.instantiate()
 
-	using CairoMakie
-	using PlutoUI
-	using NIfTI
-	using CSV
-	using DataFrames
-	using Statistics
-	using StatsBase
-	using BDTools
+	using CairoMakie, PlutoUI, NIfTI, CSV, DataFrames, Statistics, StatsBase, BDTools
 end
 
 # ╔═╡ d02b5190-6cf8-4203-9983-72d8f73907de

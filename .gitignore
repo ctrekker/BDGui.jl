@@ -30,3 +30,5 @@ uploads
 
 node_modules
 /log
+
+.CondaPkg
